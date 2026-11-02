@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10091e">
+<title>Happy Birthday Zainab | A Magical Experience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="particles"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <div class="brand">KB <span>STUDIO</span></div>
+    <div class="chapter" id="chapter">A SPECIAL CELEBRATION</div>
+    <div class="sound" id="sound">♪ SOUND OFF</div>
+  </header>
+
+  <main id="experience">
+    <section class="scene active" id="scene1">
+      <div class="eyebrow">A DAY MADE JUST FOR YOU</div>
+      <h1 class="hero-title">Happy Birthday<br><span>Zainab</span></h1>
+      <p class="subtitle">Tonight, the stars have a story to tell...</p>
+      <button class="primary-btn" onclick="nextScene()">BEGIN YOUR JOURNEY <span>→</span></button>
+      <div class="scroll-note">AN EXPERIENCE MADE WITH LOVE</div>
+    </section>
+
+    <section class="scene" id="scene2">
+      <div class="eyebrow">CHAPTER 02 · YOUR SPECIAL DAY</div>
+      <h2>A little world<br>made <span>for you.</span></h2>
+      <p class="subtitle">Some moments deserve to be remembered forever.</p>
+      <button class="primary-btn" onclick="nextScene()">CONTINUE <span>→</span></button>
+    </section>
+
+    <section class="scene" id="scene3">
+      <div class="eyebrow">CHAPTER 03 · WITH LOVE</div>
+      <h2>From the<br><span>Bajwa Family</span></h2>
+      <div id="family"></div>
+      <button class="primary-btn" onclick="nextScene()">READ YOUR WISHES <span>→</span></button>
+    </section>
+
+    <section class="scene" id="scene4">
+      <div class="eyebrow">CHAPTER 04 · A SPECIAL PRAYER</div>
+      <h2>May your life<br>always <span>shine.</span></h2>
+      <p class="subtitle">May Allah bless you with happiness, health, success and countless beautiful moments. Ameen.</p>
+      <button class="primary-btn" onclick="nextScene()">A SURPRISE AWAITS <span>→</span></button>
+    </section>
+
+    <section class="scene" id="scene5">
+      <div class="eyebrow">CHAPTER 05 · THE SECRET GIFT</div>
+      <h2>One little<br><span>secret...</span></h2>
+      <div class="gift-lock">
+        <div class="lock-icon">✧</div>
+        <p>ENTER THE SECRET CODE</p>
+        <div class="code-hint">YOUR SECRET CODE IS: <b>1234</b></div>
+        <input id="giftCode" type="password" inputmode="numeric" maxlength="4" placeholder="••••">
+        <button class="primary-btn" onclick="unlockGift()">UNLOCK YOUR GIFT ✧</button>
+        <p id="error"></p>
+      </div>
+    </section>
+
+    <section class="scene" id="scene6">
+      <div class="eyebrow">CHAPTER 06 · YOUR GRAND SURPRISE</div>
+      <h2>Made with <span>love.</span></h2>
+      <div id="gift-stage">
+        <div class="gift-box" id="giftBox" onclick="revealGift()">
+          <div class="gift-lid"></div>
+          <div class="gift-body"></div>
+          <div class="gift-ribbon"></div>
+        </div>
+        <p id="gift-instruction">TAP THE GIFT TO REVEAL YOUR SURPRISE</p>
+      </div>
+      <div id="giftReveal"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>CRAFTED WITH LOVE</span>
+    <span>KB SOFTWARE GROUP</span>
+  </footer>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
